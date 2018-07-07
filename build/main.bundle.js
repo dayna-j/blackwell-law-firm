@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     sr.reveal('.features-grid', {
-        duration: 500,
+        duration: 650,
         easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)'
     });
 });

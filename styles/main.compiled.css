@@ -78,16 +78,43 @@ section {
   background: url("/img/architecture-compressed2.jpg") no-repeat center center fixed; }
   #splash #splash-dialog {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 500px; }
-    #splash #splash-dialog h1 {
+    width: 700px;
+    height: 450px; }
+    #splash #splash-dialog h2 {
       color: #add8ce;
       color: #e3dbdb;
       font-family: 'Raleway', sans-serif;
       font-size: 2em;
       text-shadow: black 0.1em 0.1em 0.2em; }
+    #splash #splash-dialog h1 {
+      color: #e3dbdb;
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      text-shadow: black 0.1em 0.1em 0.2em;
+      font-size: 3.5em;
+      margin-top: 40px; }
+  #splash .button-wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    padding: 15px; }
+    #splash .button-wrapper button {
+      position: relative;
+      display: inline-block;
+      width: 220px;
+      height: 60px;
+      border-radius: 30px;
+      border: none;
+      outline: none;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600; }
+    #splash .button-wrapper button:nth-of-type(1) {
+      background: #564e5c; }
+    #splash .button-wrapper button:nth-of-type(2) {
+      background: #c0c75f; }
 
 .features-wrapper {
   position: relative;

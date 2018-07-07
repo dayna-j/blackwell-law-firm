@@ -110,15 +110,16 @@ html {
 
       #splash-dialog {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        width: 500px;
-        height: 500px;
+        width: 700px;
+        height: 450px;
         // background-color: rgba(255, 255, 255, 0.534);
         
 
-        h1 {
+        h2 {
           color: rgb(173, 216, 206);
           color: #e3dbdb;
           font-family: 'Raleway', sans-serif;
@@ -126,10 +127,50 @@ html {
           text-shadow: black 0.1em 0.1em 0.2em;
         }
 
+        h1 {
+          color: #e3dbdb;
+          font-family: 'Raleway', sans-serif;
+          font-weight: bold;
+          text-shadow: black 0.1em 0.1em 0.2em;
+          font-size: 3.5em;
+          margin-top: 40px;
+        }
+
       }
 
-    }
 
+      .button-wrapper{
+
+      display: flex;
+      justify-content: space-around;
+      // background-color: red;
+      width: 700px;
+      padding: 15px;
+
+      button {
+        position: relative;
+        display: inline-block;
+        width: 220px;
+        height: 60px;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        // margin: 0 auto;
+      }
+
+      button:nth-of-type(1) {
+        background: rgb(86, 78, 92);
+      }
+      
+      button:nth-of-type(2) {
+        background: rgb(192, 199, 95);
+      }
+    }
+  }
+
+    
 
 
     .features-wrapper{
