@@ -15,3 +15,64 @@ html {
   
   .noSelect{user-select: none;}
   
+  header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-color: #202020;
+    height: 85px;
+    width: 100%;
+  }
+  
+    #header-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // background-color: red;
+      width: 90%;
+      height: 100%;
+      // z-index: 10000000000;
+
+      #logo {
+        position: relative;
+        height: 100%;
+        width: 240px;
+        padding: 15px;
+      }
+    }
+
+    #header-nav {
+      position: relative;
+      height: 100%;
+      width: auto;
+      // background-color: purple;
+      display: flex;
+      align-items: center;
+      
+      ul {
+
+        li {
+          display: inline;
+          margin: 10px;
+          list-style: none;
+          text-decoration: none;
+          color: white;
+        }
+
+      }
+
+    }
+
+    #icon-wrapper {
+      display: flex;
+      align-items: center;
+
+      i{
+        margin: 10px;
+      }
+    }
+
+
