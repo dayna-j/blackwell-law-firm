@@ -13,12 +13,28 @@ html {
   }
   
   .noSelect{user-select: none;}
-
+  
   .paper-shadow-bottom-z-2 {
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
 
   }
   
+  .material-icons.md-48 { 
+    position: fixed;
+    bottom: 150px;
+    font-size: 48px; 
+  }
+
+  .md-light{
+    color: rgba(255, 255, 255, 1);
+  }
+
+
+
+  .active-header {
+    height: 70px;
+  }
+
   header {
     position: fixed;
     // top: 0px;
@@ -27,7 +43,8 @@ html {
     align-items: center;
     // background-color: black;
     background-color: #202020;
-    background-color: #252525;
+    // background-color: #252525;
+    // background-color: ghostwhite;
 
     height: 85px;
     width: 100%;
@@ -88,7 +105,8 @@ html {
       align-items: center;
 
       i{
-        margin: 10px;
+        margin: 0 30px;
+        
       }
     }
 
@@ -140,7 +158,7 @@ html {
 
 
       .button-wrapper{
-
+      position: relative;
       display: flex;
       justify-content: space-around;
       // background-color: red;
@@ -165,14 +183,11 @@ html {
       }
       
       button:nth-of-type(2) {
-        background: rgb(192, 199, 95);
+        background-color: #973a3a;
       }
     }
   }
-
-    
-
-
+  
     .features-wrapper{
       position: relative;
       display: flex;
