@@ -13,21 +13,21 @@ html {
   user-select: none; }
 
 header {
-  position: relative;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
   background-color: #202020;
   height: 85px;
-  width: 100%; }
+  width: 100%;
+  z-index: 999999999999; }
 
 #header-wrapper {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 95%;
   height: 100%; }
   #header-wrapper #logo {
     position: relative;
@@ -44,14 +44,33 @@ header {
   #header-nav ul li {
     display: inline;
     margin: 10px;
+    padding: 5px;
     list-style: none;
     text-decoration: none;
-    color: white; }
+    color: white;
+    font-size: 1em;
+    font-family: 'Open Sans'; }
+  #header-nav ul li::after {
+    content: '\25bc';
+    color: #808080; }
 
 #icon-wrapper {
   display: flex;
   align-items: center; }
   #icon-wrapper i {
     margin: 10px; }
+
+section {
+  height: 100vh;
+  background-color: black; }
+  section .features-wrapper {
+    display: relative;
+    width: 100%;
+    height: 280px;
+    background: grey; }
+
+#splash {
+  position: relative;
+  background: url("/img/architecture-compressed.jpg") no-repeat center center fixed; }
 
 /*# sourceMappingURL=main.compiled.css.map */
