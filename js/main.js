@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     
-    window.sr = ScrollReveal({
+    let sr = ScrollReveal({
         reset: true
     });
     

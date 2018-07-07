@@ -12,6 +12,9 @@ html {
 .noSelect {
   user-select: none; }
 
+.paper-shadow-bottom-z-2 {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2); }
+
 header {
   position: fixed;
   display: flex;
@@ -68,7 +71,23 @@ section {
 
 #splash {
   position: relative;
-  background: url("/img/architecture-compressed.jpg") no-repeat center center fixed; }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: url("/img/architecture-compressed2.jpg") no-repeat center center fixed; }
+  #splash #splash-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px; }
+    #splash #splash-dialog h1 {
+      color: #add8ce;
+      color: #e3dbdb;
+      font-family: 'Raleway', sans-serif;
+      font-size: 2em;
+      text-shadow: black 0.1em 0.1em 0.2em; }
 
 .features-wrapper {
   position: relative;

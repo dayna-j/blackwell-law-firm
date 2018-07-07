@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    window.sr = ScrollReveal({
+    var sr = ScrollReveal({
         reset: true
     });
 
