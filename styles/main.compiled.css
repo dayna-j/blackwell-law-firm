@@ -165,7 +165,7 @@ section {
       width: 100%;
       padding: 35px; }
 
-#features-section .slogan-row {
+.features-wrapper + .slogan-row {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -174,15 +174,139 @@ section {
   height: 220px;
   background-color: white;
   font-family: 'Raleway'; }
-  #features-section .slogan-row P {
+  .features-wrapper + .slogan-row P {
     margin: 3px; }
-  #features-section .slogan-row p:nth-of-type(1) {
+  .features-wrapper + .slogan-row p:nth-of-type(1) {
     color: #973a3a;
     font-size: 1.2em;
     font-weight: 200; }
-  #features-section .slogan-row p:nth-of-type(2) {
+  .features-wrapper + .slogan-row p:nth-of-type(2) {
     font-size: 2em;
-    font-weight: bold; }
+    font-weight: bold;
+    color: #564e5c; }
+
+section:nth-of-type(2) {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ghostwhite;
+  margin: 0 auto; }
+  section:nth-of-type(2) div {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    background-color: ghostwhite;
+    width: 50%;
+    overflow: hidden; }
+  section:nth-of-type(2) .info-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    section:nth-of-type(2) .info-panel .info-panel-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Raleway', sans-serif;
+      line-height: 24px;
+      width: 70%;
+      height: auto; }
+      section:nth-of-type(2) .info-panel .info-panel-wrapper h3 {
+        color: #973a3a;
+        font-size: 1.2em;
+        font-weight: 200;
+        margin-bottom: 25px; }
+      section:nth-of-type(2) .info-panel .info-panel-wrapper h2 {
+        font-size: 2.4em;
+        font-weight: bold;
+        color: #564e5c;
+        margin-bottom: 25px; }
+      section:nth-of-type(2) .info-panel .info-panel-wrapper p {
+        text-align: center; }
+      section:nth-of-type(2) .info-panel .info-panel-wrapper button {
+        position: relative;
+        display: inline-block;
+        width: 220px;
+        height: 60px;
+        border-radius: 30px;
+        margin-top: 25px;
+        background-color: #973a3a;
+        color: ghostwhite;
+        border: none;
+        outline: none;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600; }
+
+section:nth-of-type(3) {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ghostwhite; }
+  section:nth-of-type(3) div {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    background-color: ghostwhite;
+    width: 50%;
+    overflow: hidden; }
+  section:nth-of-type(3) .info-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', 'sans serif'; }
+    section:nth-of-type(3) .info-panel .info-panel-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      width: 70%;
+      line-height: 24px; }
+      section:nth-of-type(3) .info-panel .info-panel-wrapper h3 {
+        color: #973a3a;
+        font-size: 1.2em;
+        font-weight: 200;
+        margin-bottom: 25px; }
+      section:nth-of-type(3) .info-panel .info-panel-wrapper h2 {
+        font-size: 2.4em;
+        font-weight: bold;
+        color: #564e5c;
+        margin-bottom: 25px; }
+      section:nth-of-type(3) .info-panel .info-panel-wrapper p {
+        text-align: center; }
+      section:nth-of-type(3) .info-panel .info-panel-wrapper button {
+        position: relative;
+        display: inline-block;
+        width: 220px;
+        height: 60px;
+        background-color: #973a3a;
+        color: ghostwhite;
+        margin-top: 25px;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600; }
+
+section:nth-of-type(4) {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  section:nth-of-type(4) div {
+    position: relative;
+    display: inline-block;
+    height: 50%;
+    background-color: ghostwhite;
+    width: 100%;
+    overflow: hidden; }
+  section:nth-of-type(4) div:nth-of-type(1) {
+    background: url("/img/iStock_000007450359Medium.jpg") center center; }
+  section:nth-of-type(4) div:nth-of-type(2) {
+    background-color: ghostwhite; }
 
 footer {
   bottom: 0px;

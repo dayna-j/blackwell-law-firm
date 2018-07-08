@@ -257,8 +257,8 @@ html {
 
 }
 
-
-#features-section .slogan-row{
+// .features-wrapper classed elements with slogan-row classed elements as adjacent sibling
+.features-wrapper + .slogan-row{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -279,13 +279,185 @@ html {
 
     }
 
-    p:nth-of-type(2) {
+    p:nth-of-type(2) {/////////////////////////////
       font-size: 2em;
       font-weight: bold;
+      color: $template-purple;
     }
 
   }
 
+  section:nth-of-type(2) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: ghostwhite;
+    margin: 0 auto;
+    
+    
+
+    div {
+      position: relative;
+      display: inline-block;
+      height: 100%;
+      background-color: ghostwhite;
+      width: 50%;
+      overflow: hidden;
+    }
+
+    .info-panel{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+            
+      .info-panel-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Raleway', sans-serif;
+        line-height: 24px;
+        // background-color: red;
+        width: 70%;
+        height: auto;
+        
+
+        h3 {
+          color: $template-red;
+          font-size: 1.2em;
+          font-weight: 200;  
+          margin-bottom: 25px;
+        }
+
+        h2 {
+          font-size: 2.4em;
+          font-weight: bold;
+          color: $template-purple;
+          margin-bottom: 25px;
+        }
+
+        p { 
+          text-align: center;
+        }
+
+        button{
+          position: relative;
+          display: inline-block;
+          width: 220px;
+          height: 60px;
+          border-radius: 30px;
+          margin-top: 25px;
+          background-color: $template-red;
+          color: ghostwhite;
+          border: none;
+          outline: none;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 600;
+          // margin: 0 auto;
+        }
+      }
+    }
+  }
+
+
+  section:nth-of-type(3) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: ghostwhite;
+
+    div {
+      position: relative;
+      display: inline-block;
+      height: 100%;
+      background-color: ghostwhite;
+      width: 50%;
+      overflow: hidden;
+    }
+
+    .info-panel{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Raleway', 'sans serif';
+      
+      .info-panel-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // background-color: red;
+        height: auto;
+        width: 70%;
+        line-height: 24px;
+
+        h3 {
+          color: $template-red;
+          font-size: 1.2em;
+          font-weight: 200;  
+          margin-bottom: 25px;
+        }
+
+        h2 {
+          font-size: 2.4em;
+          font-weight: bold;
+          color: $template-purple;
+          margin-bottom: 25px;
+        }
+
+        p { 
+          text-align: center;
+        }
+
+        button{
+          position: relative;
+          display: inline-block;
+          width: 220px;
+          height: 60px;
+          background-color: $template-red;
+          color: ghostwhite;
+          margin-top: 25px;
+          border-radius: 30px;
+          border: none;
+          outline: none;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 600;
+          // margin: 0 auto;
+        }
+      }
+    }
+
+
+  }
+
+  section:nth-of-type(4) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    div {
+      position: relative;
+      display: inline-block;
+      height: 50%;
+      background-color: ghostwhite;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    div:nth-of-type(1) {
+      background: url('/img/iStock_000007450359Medium.jpg') center center;
+    }
+
+    div:nth-of-type(2) {
+      background-color: ghostwhite;
+    }
+  }
 
   footer {
   // position: fixed;
