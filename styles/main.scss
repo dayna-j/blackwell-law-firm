@@ -1,3 +1,9 @@
+$template-red: #973a3a;
+$template-purple: rgb(86, 78, 92);
+
+
+
+
 html {
     box-sizing: border-box;
     height: 100%;
@@ -128,7 +134,7 @@ html {
       justify-content: flex-start;
       align-items: center;
       // top: 85px;
-      background: url('/img/architecture-compressed3.jpg') no-repeat center center fixed;
+      background: url('/img/architecture-compressed3.jpg') no-repeat center center;
 
 
 
@@ -185,11 +191,11 @@ html {
       }
 
       button:nth-of-type(1) {
-        background: rgb(86, 78, 92);
+        background: $template-purple;
       }
       
       button:nth-of-type(2) {
-        background-color: #973a3a;
+        background-color: $template-red
       }
     }
 
@@ -221,39 +227,105 @@ html {
      }
   }
   
-    .features-wrapper{
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+.features-wrapper{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  // max-width: 1366px;      
+  height: 280px;
+  background: $template-purple;
+
+  .features-grid {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 250px;
+    // margin: 50px;
+    // background-color: red;
+    // border: 1px solid black;
+    img {
       width: 100%;
-      // max-width: 1366px;      
-      height: 280px;
-      background: rgb(86, 78, 92);
+      padding: 35px;
+      }
 
-      .features-grid {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  }
 
-        height: 100%;
-        width: 250px;
-        // margin: 50px;
-        // background-color: red;
-        // border: 1px solid black;
+}
 
-        img {
-          width: 100%;
-          padding: 35px;
-        }
+
+#features-section .slogan-row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 220px;
+  background-color: white;
+  font-family: 'Raleway';
+
+  P {
+    margin: 3px;
+  }
+
+  p:nth-of-type(1) {
+    color: $template-red;
+    font-size: 1.2em;
+    font-weight: 200;
+
+    }
+
+    p:nth-of-type(2) {
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+  }
+
+
+  footer {
+  // position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: auto;
+    color: white;
+    font-size: 1.1em;
+
+    #footer-panel{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 580px;
+      background: $template-purple;
+      text-align: center;
+
+      .footer-panel-column {
+        margin: 0 auto; 
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: 500px;
+        width: 200px;
+        background-color: red;
+        margin: 15px;
 
       }
 
     }
 
-
-    footer {
+    #footer-bottom{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      margin: 0 auto;
+      text-align: center;
+      height: 70px;
+      background-color: #202020;
+    }
 
     }
 
