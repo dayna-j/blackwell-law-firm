@@ -1,18 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
     
+    let materialDownArrow = document.getElementById('material-arrow-down');
+
     let sr = ScrollReveal();
-    
 
-    sr.reveal('#splash-dialog', {
-        duration: 1500,
-        reset: false
-    });
-
-    sr.reveal( '.button-wrapper' , {
-        duration: 1500,
-        reset: false
-    });
-
+    sr.reveal('.splash-sr', {
+        duration: 1500
+    }, 375);
 
     sr.reveal('.features-grid', {
         duration: 650,
@@ -20,9 +14,12 @@ document.addEventListener("DOMContentLoaded", function() {
         reset: true
     });
 
+    
+    
+    materialDownArrow.addEventListener('click', function(){
+        window.scrollBy(0, 100 * window.innerHeight/100);
+    });
+
+
 
   });
-
-
-  // #splash-dialog
-  // .button-wrapper
