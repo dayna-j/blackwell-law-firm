@@ -15,17 +15,21 @@ html {
 .paper-shadow-bottom-z-2 {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2); }
 
-.material-icons.md-48 {
-  position: fixed;
-  bottom: 150px;
-  font-size: 48px; }
-
-.md-light {
-  color: white; }
-
 .active-header {
   height: 70px; }
 
+.bounce-animation {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite; }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-30px); }
+  60% {
+    transform: translateY(-15px); } }
 header {
   position: fixed;
   display: flex;
@@ -126,6 +130,21 @@ section {
       background: #564e5c; }
     #splash .button-wrapper button:nth-of-type(2) {
       background-color: #973a3a; }
+  #splash #material-arrow-wrapper {
+    position: absolute;
+    bottom: 0px; }
+  #splash #arrow-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 100px; }
+    #splash #arrow-container #material-arrow-down {
+      color: white;
+      position: absolute;
+      font-size: 75px;
+      font-weight: 100;
+      z-index: 10000; }
 
 .features-wrapper {
   position: relative;
