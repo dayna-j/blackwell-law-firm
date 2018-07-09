@@ -350,12 +350,22 @@ section:nth-of-type(4) {
     height: 100%; }
     #bottom-grid-wrapper .bottom-grid div {
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      align-content: center;
+      align-items: center;
       width: 95%;
       height: 300px;
       border: 1px dotted #dcdcdc;
       background-color: white; }
+      #bottom-grid-wrapper .bottom-grid div i {
+        font-size: 5em;
+        margin-bottom: 45px; }
+      #bottom-grid-wrapper .bottom-grid div a {
+        color: #973a3a;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.6em;
+        font-family: 'Open Sans', 'sans serif'; }
 
 footer {
   bottom: 0px;
