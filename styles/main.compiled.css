@@ -89,7 +89,7 @@ section {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: url("/img/architecture-compressed3.jpg") no-repeat center center; }
+  background: url("../img/architecture-compressed3.jpg") no-repeat center center; }
   #splash #splash-dialog {
     display: flex;
     flex-direction: column;
@@ -98,16 +98,16 @@ section {
     width: 700px;
     height: 450px; }
     #splash #splash-dialog h2 {
-      color: #add8ce;
       color: #e3dbdb;
       font-family: 'Raleway', sans-serif;
       font-size: 2em;
-      text-shadow: black 0.1em 0.1em 0.2em; }
+      text-shadow: black 0.1em 0.1em 0.2em;
+      text-shadow: 0px 0px 3px #000, -1px -1px #000, 1px 1px #000; }
     #splash #splash-dialog h1 {
       color: #e3dbdb;
       font-family: 'Raleway', sans-serif;
       font-weight: bold;
-      text-shadow: black 0.1em 0.1em 0.2em;
+      text-shadow: 0px 0px 3px #000, -1px -1px #000, 1px 1px #000;
       font-size: 3.5em;
       margin-top: 40px; }
   #splash .button-wrapper {
@@ -199,6 +199,10 @@ section:nth-of-type(2) {
     background-color: ghostwhite;
     width: 50%;
     overflow: hidden; }
+    section:nth-of-type(2) div img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
   section:nth-of-type(2) .info-panel {
     display: flex;
     justify-content: center;
@@ -289,6 +293,10 @@ section:nth-of-type(3) {
         outline: none;
         font-family: 'Open Sans', sans-serif;
         font-weight: 600; }
+  section:nth-of-type(3) div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 section:nth-of-type(4) {
   position: relative;
@@ -296,17 +304,58 @@ section:nth-of-type(4) {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  section:nth-of-type(4) div {
+
+#meet-us-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/iStock_000007450359Medium2-min.jpg") center center no-repeat;
+  width: 100%;
+  height: 50%; }
+  #meet-us-panel h1 {
+    font-size: 2.4em;
+    font-weight: bold;
+    color: ghostwhite;
+    color: #e3dbdb;
+    text-shadow: 0px 0px 3px #000, -1px -1px #000, 1px 1px #000;
+    margin-bottom: 25px; }
+  #meet-us-panel button {
     position: relative;
     display: inline-block;
-    height: 50%;
-    background-color: ghostwhite;
-    width: 100%;
-    overflow: hidden; }
-  section:nth-of-type(4) div:nth-of-type(1) {
-    background: url("/img/iStock_000007450359Medium.jpg") center center; }
-  section:nth-of-type(4) div:nth-of-type(2) {
-    background-color: ghostwhite; }
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    margin-top: 25px;
+    background-color: #973a3a;
+    color: ghostwhite;
+    border: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600; }
+
+#bottom-grid-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 50%;
+  background-color: ghostwhite;
+  width: 100%;
+  overflow: hidden; }
+  #bottom-grid-wrapper .bottom-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%; }
+    #bottom-grid-wrapper .bottom-grid div {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      width: 95%;
+      height: 300px;
+      border: 1px dotted #dcdcdc;
+      background-color: white; }
 
 footer {
   bottom: 0px;
@@ -327,7 +376,6 @@ footer {
       padding-bottom: 20px;
       height: 500px;
       width: 200px;
-      background-color: red;
       margin: 15px; }
   footer #footer-bottom {
     display: flex;

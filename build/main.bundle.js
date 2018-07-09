@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var sr = ScrollReveal();
 
     sr.reveal('.splash-sr', {
-        duration: 1100
-    }, 275);
+        duration: 1600
+    }, 400);
 
     sr.reveal('.features-grid', {
         duration: 650,
