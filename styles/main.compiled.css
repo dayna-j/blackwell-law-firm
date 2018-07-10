@@ -9,6 +9,9 @@ html {
   margin: 0;
   padding: 0; }
 
+body {
+  line-height: 24px; }
+
 .noSelect {
   user-select: none; }
 
@@ -36,6 +39,7 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #202020;
+  border-bottom: 2px solid #973a3a;
   height: 85px;
   width: 100%;
   z-index: 999999999999; }
@@ -213,7 +217,6 @@ section:nth-of-type(2) {
       justify-content: center;
       align-items: center;
       font-family: 'Raleway', sans-serif;
-      line-height: 24px;
       width: 70%;
       height: auto; }
       section:nth-of-type(2) .info-panel .info-panel-wrapper h3 {
@@ -266,8 +269,7 @@ section:nth-of-type(3) {
       justify-content: center;
       align-items: center;
       height: auto;
-      width: 70%;
-      line-height: 24px; }
+      width: 70%; }
       section:nth-of-type(3) .info-panel .info-panel-wrapper h3 {
         color: #973a3a;
         font-size: 1.2em;
@@ -375,18 +377,30 @@ footer {
   font-size: 1.1em; }
   footer #footer-panel {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 580px;
-    background: #564e5c;
-    text-align: center; }
-    footer #footer-panel .footer-panel-column {
-      margin: 0 auto;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      height: 500px;
-      width: 200px;
-      margin: 15px; }
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #564e5c; }
+    footer #footer-panel #footer-column-wrapper {
+      display: flex;
+      height: 100%;
+      padding: 0 175px; }
+      footer #footer-panel #footer-column-wrapper .footer-panel-column {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        margin: 15px;
+        font-family: 'Raleway', 'sans serif'; }
+        footer #footer-panel #footer-column-wrapper .footer-panel-column:nth-of-type(3) {
+          width: 50%; }
+        footer #footer-panel #footer-column-wrapper .footer-panel-column #logo {
+          width: 240px;
+          margin-bottom: 15px; }
+        footer #footer-panel #footer-column-wrapper .footer-panel-column .location-header {
+          margin-top: 15px;
+          margin-bottom: 5px; }
   footer #footer-bottom {
     display: flex;
     flex-direction: column;
