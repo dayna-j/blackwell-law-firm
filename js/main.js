@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         reset: true
     });
 
-    
+    // add sr for info-panel
     
     materialDownArrow.addEventListener('click', function(){
         window.scrollBy(0, 100 * window.innerHeight/100);

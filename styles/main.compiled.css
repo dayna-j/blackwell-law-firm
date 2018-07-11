@@ -59,23 +59,57 @@ header {
     padding: 20px; }
 
 #header-nav {
-  position: relative;
   height: 100%;
-  width: auto;
+  width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center; }
-  #header-nav ul li {
-    display: inline;
-    margin: 10px;
-    padding: 5px;
+  #header-nav li {
+    width: 150px; }
+  #header-nav ul {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer; }
+  #header-nav ul li:hover > ul {
+    display: block;
+    /* Display the dropdown */
+    visibility: visible; }
+  #header-nav ul > li {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     list-style: none;
-    text-decoration: none;
     color: white;
     font-size: 1em;
-    font-family: 'Open Sans'; }
-  #header-nav ul li::after {
-    content: '\25bc';
-    color: #808080; }
+    font-family: 'Open Sans';
+    height: 100%;
+    padding: 20px;
+    white-space: nowrap;
+    transition: background-color .3s; }
+    #header-nav ul > li:hover {
+      background-color: black; }
+  #header-nav ul li ul {
+    display: none;
+    visibility: hidden;
+    white-space: nowrap;
+    z-index: 9999999;
+    position: absolute;
+    width: 100%;
+    top: 85px;
+    left: 0;
+    background-color: black; }
+    #header-nav ul li ul li {
+      background-color: #202020; }
+      #header-nav ul li ul li:hover {
+        background-color: black; }
+  #header-nav .nested-submenu {
+    position: absolute;
+    top: 0;
+    left: 150px; }
 
 #icon-wrapper {
   display: flex;

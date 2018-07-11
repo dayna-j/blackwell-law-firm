@@ -1,5 +1,6 @@
 $template-red: #973a3a;
 $template-purple: rgb(86, 78, 92);
+$template-black: #202020;
 
 
 html {
@@ -55,10 +56,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    // background-color: black;
-    background-color: #202020;
+    background-color: $template-black;
     border-bottom: 2px solid $template-red;
-    // background-color: #252525;
 
     height: 85px;
     width: 100%;
@@ -85,32 +84,81 @@ html {
     }
 
     #header-nav {
-      position: relative;
       height: 100%;
-      width: auto;
-      // background-color: purple;
+      width: 100%;
       display: flex;
+      justify-content: center;
       align-items: center;
+      // background-color: deeppink;
+      
+      li {
+        width: 150px;
+      }
       
       ul {
-
-        li {
-          display: inline;
-          margin: 10px;
-          padding: 5px;
-          list-style: none;
-          text-decoration: none;
-          color: white;
-          font-size: 1em;
-          font-family: 'Open Sans';
-        }
-
-        li::after{
-          content: '\25bc';
-          color: #808080;
-        }
+        position: relative;
+        // background-color: purple;
+        height: 100%;
+        // width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        cursor: pointer;
 
       }
+
+      ul li:hover > ul {
+        display: block;	/* Display the dropdown */
+        visibility: visible;
+    }
+
+    ul > li {
+      position: relative;  
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      list-style: none;
+      color: white;
+      font-size: 1em;
+      font-family: 'Open Sans';
+      // background-color: white;
+      height: 100%;
+      padding: 20px;
+      // width: 200px;
+      white-space: nowrap;
+      transition: background-color .3s;
+      
+      &:hover{
+        background-color: black;
+        
+      }
+    }
+
+    ul li ul {
+      display: none;
+      visibility: hidden;
+      white-space: nowrap;
+      z-index: 9999999;
+      position: absolute;
+      width: 100%;
+      top: 85px;
+      left: 0;
+      background-color: black;
+
+      li {
+        background-color: $template-black;
+        &:hover{
+          background-color: black;
+        }
+      }
+    }
+
+
+    .nested-submenu {
+      position: absolute;
+      top: 0;
+      left: 150px;
+    }
 
     }
 
